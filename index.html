@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>💬 Crypto Assistant Chatbot</h2>
+        <form method="POST">
+            <input type="text" name="query" placeholder="Ask for a price..." required>
+            <button type="submit">Ask</button>
+        </form>
+        <p class="response">{{ response }}</p>
+    </div>
+</body>
+</html>
