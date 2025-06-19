@@ -32,7 +32,7 @@ def index():
                 answer = f"The current price of {word} is ${price}"
                 break
         if answer == "":
-            answer = "Sorry, I couldn’t find that coin 😕"
+            answer = "Sorry, I couldn’t find that coin "
     return render_template("index.html", response=answer)
 
 if __name__ == "__main__":
