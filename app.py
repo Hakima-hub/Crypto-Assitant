@@ -15,7 +15,7 @@ def get_price(coin):
 def ask_gpt(question):
     prompt = f"You are a crypto expert assistant. Explain this clearly for a beginner:\n\n{question}"
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # Or gpt-4 if you have access
+        model="gpt-3.5-turbo",  
         messages=[{"role": "user", "content": prompt}]
     )
     return response.choices[0].message.content.strip()
